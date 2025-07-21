@@ -1,0 +1,196 @@
+* {
+ 
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+.profile-pic:hover {
+  opacity: 0.85;
+}
+
+.profile-container {
+    height: 87vh;
+  display: flex;
+  flex-direction: row;
+  max-width: 1100px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* SIDEBAR */
+.sidebar {
+  background: linear-gradient(to bottom right, #9333ea, #3b82f6);
+  color: white;
+  width: 35%;
+  min-width: 250px;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.username {
+  margin-top: 15px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.role {
+  font-size: 14px;
+  color: #dcd8f8;
+  margin-bottom: 20px;
+}
+
+/* Textarea Styling */
+.sidebar h3 {
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.sidebar textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: none;
+  resize: none;
+  outline: none;
+  font-size: 14px;
+  font-family: inherit;
+  color: #333;
+}
+
+/* MAIN CONTENT */
+.main-content {
+  flex: 1;
+  padding: 30px 40px;
+  background-color: #efedf3;
+}
+
+.main-content h3 {
+  font-size: 20px;
+  /* margin-bottom: 10px; */
+}
+
+.main-content input[type="text"],
+.main-content input[type="email"],
+.main-content input {
+  width: 100%;
+  max-width: 300px;
+  height: 35px;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  /* margin-bottom: 20px; */
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.main-content input:focus {
+  border-color: #6366f1;
+}
+
+/* STATS SECTION */
+.stats {
+  display: flex;
+  /* Previously commented out or too big */
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+/* Reduce padding/margin inside stat-boxes */
+.stat-box {
+  padding: 16px;
+  margin-bottom: 20px;
+  /* background-color: #f9f9f9; */
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.stat-box h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.stat-box select {
+  width: 100%;
+  height: 40px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+  /* background-color: white; */
+  transition: border-color 0.2s ease;
+}
+
+.stat-box select:focus {
+  border-color: #6366f1; /* Indigo-500 */
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2); /* Soft focus outline */
+}
+
+/* Button */
+.contact-btn {
+  /* margin-top: 30px; */
+  padding: 12px 30px;
+  background-image: linear-gradient(to bottom right, #9333ea, #3b82f6);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+  
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; /* adds space between text and icon */
+}
+
+.contact-btn:hover {
+  background-color: #4338ca;
+}
+
+.btn-icon {
+  margin-left: 5px;
+}
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .profile-container {
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+
+  .stats {
+    flex-direction: column;
+  }
+}
