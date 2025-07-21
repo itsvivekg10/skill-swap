@@ -1,0 +1,58 @@
+/* Container for everything */
+.community-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Input box section */
+.input-section {
+  margin-bottom: 20px;
+}
+
+.community-input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Posts section */
+.posts-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.post-placeholder {
+  background-color: #f2f2f2;
+  padding: 16px;
+  border-radius: 6px;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .community-container {
+    padding: 15px;
+  }
+
+  .community-input {
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+
+  .posts-title {
+    font-size: 20px;
+  }
+
+  .post-placeholder {
+    font-size: 13px;
+    padding: 12px;
+  }
+}
